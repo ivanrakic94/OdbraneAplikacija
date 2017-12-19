@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2A3E6C1FE94BED00D422D7 /* DeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2A3E6B1FE94BED00D422D7 /* DeleteViewController.swift */; };
 		FDD37C2A1FE92BA1006835AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37C291FE92BA1006835AE /* AppDelegate.swift */; };
 		FDD37C2C1FE92BA1006835AE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37C2B1FE92BA1006835AE /* FirstViewController.swift */; };
 		FDD37C2E1FE92BA1006835AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37C2D1FE92BA1006835AE /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B2A3E6B1FE94BED00D422D7 /* DeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteViewController.swift; sourceTree = "<group>"; };
 		FDD37C261FE92BA1006835AE /* OdbraneAplikacija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdbraneAplikacija.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD37C291FE92BA1006835AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD37C2B1FE92BA1006835AE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				FDD37C321FE92BA1006835AE /* Assets.xcassets */,
 				FDD37C341FE92BA1006835AE /* LaunchScreen.storyboard */,
 				FDD37C371FE92BA1006835AE /* Info.plist */,
+				6B2A3E6B1FE94BED00D422D7 /* DeleteViewController.swift */,
 			);
 			path = OdbraneAplikacija;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				FDD37C2E1FE92BA1006835AE /* SecondViewController.swift in Sources */,
 				FDD37C2A1FE92BA1006835AE /* AppDelegate.swift in Sources */,
 				FDD37C2C1FE92BA1006835AE /* FirstViewController.swift in Sources */,
+				6B2A3E6C1FE94BED00D422D7 /* DeleteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
