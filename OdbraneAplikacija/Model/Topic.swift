@@ -106,7 +106,7 @@ class Topic {
         }
     }
     
-    var LecturerList : Array<Lecturer> = Array() {
+    var LecturerList : Array<Lecturer> {
         get {
             return self.LecturerList
         }

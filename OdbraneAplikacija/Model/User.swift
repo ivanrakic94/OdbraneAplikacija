@@ -35,7 +35,7 @@ class User: Lecturer {
         }
     }
     
-    var TemplateList : Array<Template> = Array() {
+    var TemplateList : Array<Template> {
         get {
             return self.TemplateList
         }

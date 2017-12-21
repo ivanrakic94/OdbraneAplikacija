@@ -38,7 +38,7 @@ class Activity {
         }
     }
     
-    var TopicList : Array<Topic> = Array() {
+    var TopicList : Array<Topic> {
         get {
             return self.TopicList
         }
@@ -47,7 +47,7 @@ class Activity {
         }
     }
     
-    var TemplateList : Array<Template> = Array() {
+    var TemplateList : Array<Template> {
         get {
             return self.TemplateList
         }
@@ -56,4 +56,5 @@ class Activity {
         }
     }
 }
+
 

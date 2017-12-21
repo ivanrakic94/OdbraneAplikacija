@@ -223,5 +223,13 @@ class DBBroker: NSObject {
         }
     }
     
+    func closeConnection() {
+        db = nil
+    }
+    
+    func saveLecturer() throws {
+        
+    }
     
 }
+
