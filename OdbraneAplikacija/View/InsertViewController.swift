@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  OdbraneAplikacija
 //
 //  Created by Ivan Rakić on 12/19/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class InsertViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
