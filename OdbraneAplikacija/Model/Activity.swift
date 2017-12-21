@@ -10,6 +10,16 @@ import UIKit
 
 class Activity {
     
+    init() {
+    }
+    
+    init(ActivityID : Int32, ActivityName : String) {
+        self.ActivityID = ActivityID
+        self.ActivityName = ActivityName
+        self.TemplateList = Array<Template>()
+        self.TopicList = Array<Topic>()
+    }
+    
     var ActivityID : Int32 {
         get {
             return self.ActivityID

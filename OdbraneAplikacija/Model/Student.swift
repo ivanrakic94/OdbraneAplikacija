@@ -10,6 +10,20 @@ import UIKit
 
 class Student: Person {
     
+    init() {
+    }
+    
+    init(PersonID : Int32, FirstName : String, LastName : String, Email : String, Sex : Character, Telephone : String, Index : String) {
+        
+        self.PersonID = PersonID
+        self.FirstName = FirstName
+        self.LastName = LastName
+        self.Email = Email
+        self.Sex = Sex
+        self.Telephone = Telephone
+        self.Index = Index
+    }
+    
     var PersonID : Int32 {
         get {
             return self.PersonID

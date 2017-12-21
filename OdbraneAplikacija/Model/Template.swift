@@ -10,6 +10,18 @@ import UIKit
 
 class Template {
     
+    init() {
+    }
+    
+    init(TemplateID : Int32, Title : String, Subject : String, Content : String) {
+        
+        self.TemplateID = TemplateID
+        self.Title = Title
+        self.Subject = Subject
+        self.Content = Content
+        self.ActivityList = Array<Activity>()
+    }
+    
     var TemplateID : Int32 {
         get {
             return self.TemplateID

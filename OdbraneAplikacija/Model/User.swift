@@ -10,6 +10,13 @@ import UIKit
 
 class User: Lecturer {
     
+    init(PersonID: Int32, FirstName: String, LastName: String, Email: String, Sex: Character, Telephone: String, Title: String, EmailPassword : String, AllowedNumberOfTopics : Int32) {
+        super.init(PersonID, FirstName, LastName, Email, Sex, Telephone, Title)
+        self.EmailPassword = EmailPassword
+        self.AllowedNumberOfTopics = AllowedNumberOfTopics
+        self.TemplateList = Array<Template>()
+    }
+    
     var EmailPassword : String {
         get {
             return self.EmailPassword

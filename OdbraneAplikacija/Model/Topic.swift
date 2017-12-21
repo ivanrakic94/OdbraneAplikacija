@@ -10,6 +10,21 @@ import UIKit
 
 class Topic {
     
+    init() {
+    }
+    
+    init(TopicID : Int32, Title : String, Module : String, Status : String, ApprovalDate : Date, DateOfDefence : Date, DefanceLocation : String) {
+        
+        self.TopicID = TopicID
+        self.Title = Title
+        self.Module = Module
+        self.Status = Status
+        self.ApprovalDate = ApprovalDate
+        self.DateOfDefence = DateOfDefence
+        self.DefenceLocation = DefanceLocation
+        self.LecturerList = Array<Lecturer>()
+    }
+    
     var TopicID : Int32 {
         get {
             return self.TopicID
