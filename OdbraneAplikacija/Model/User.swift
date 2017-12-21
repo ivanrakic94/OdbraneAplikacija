@@ -11,7 +11,7 @@ import UIKit
 class User: Lecturer {
     
     init(PersonID: Int32, FirstName: String, LastName: String, Email: String, Sex: Character, Telephone: String, Title: String, EmailPassword : String, AllowedNumberOfTopics : Int32) {
-        super.init(PersonID, FirstName, LastName, Email, Sex, Telephone, Title)
+        super.init(PersonID : PersonID, FirstName : FirstName, LastName : LastName, Email : Email, Sex : Sex, Telephone : Telephone, Title : Title)
         self.EmailPassword = EmailPassword
         self.AllowedNumberOfTopics = AllowedNumberOfTopics
         self.TemplateList = Array<Template>()
