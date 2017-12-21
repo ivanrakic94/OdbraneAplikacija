@@ -13,7 +13,7 @@ class Lecturer: Person {
     init() {
     }
     
-    init(PersonID : Int32, FirstName : String, LastName : String, Email : String, Sex : Character, Telephone : String, Title : String) {
+    init(PersonID : Int, FirstName : String, LastName : String, Email : String, Sex : String, Telephone : String, Title : String) {
         
         self.PersonID = PersonID
         self.FirstName = FirstName
@@ -24,7 +24,7 @@ class Lecturer: Person {
         self.Title = Title
     }
     
-    var PersonID : Int32 {
+    var PersonID : Int {
         get {
             return self.PersonID
         }
@@ -60,7 +60,7 @@ class Lecturer: Person {
         }
     }
     
-    var Sex : Character {
+    var Sex : String {
         get {
             return self.Sex
         }

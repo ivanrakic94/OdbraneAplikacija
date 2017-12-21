@@ -13,14 +13,14 @@ class Activity {
     init() {
     }
     
-    init(ActivityID : Int32, ActivityName : String) {
+    init(ActivityID : Int, ActivityName : String) {
         self.ActivityID = ActivityID
         self.ActivityName = ActivityName
         self.TemplateList = Array<Template>()
         self.TopicList = Array<Topic>()
     }
     
-    var ActivityID : Int32 {
+    var ActivityID : Int {
         get {
             return self.ActivityID
         }

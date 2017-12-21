@@ -13,7 +13,7 @@ class Template {
     init() {
     }
     
-    init(TemplateID : Int32, Title : String, Subject : String, Content : String) {
+    init(TemplateID : Int, Title : String, Subject : String, Content : String) {
         
         self.TemplateID = TemplateID
         self.Title = Title
@@ -22,7 +22,7 @@ class Template {
         self.ActivityList = Array<Activity>()
     }
     
-    var TemplateID : Int32 {
+    var TemplateID : Int {
         get {
             return self.TemplateID
         }

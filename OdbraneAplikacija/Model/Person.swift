@@ -9,11 +9,11 @@
 import UIKit
 
 protocol Person {
-    var PersonID : Int32 { get set}
+    var PersonID : Int { get set}
     var FirstName : String { get set}
     var LastName : String { get set}
     var Email : String { get set}
-    var Sex : Character { get set}
+    var Sex : String { get set}
     var Telephone : String { get set}
     
 }

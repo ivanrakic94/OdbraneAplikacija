@@ -13,7 +13,7 @@ class Topic {
     init() {
     }
     
-    init(TopicID : Int32, Title : String, Module : String, Status : String, ApprovalDate : Date, DateOfDefence : Date, DefanceLocation : String) {
+    init(TopicID : Int, Title : String, Module : String, Status : String, ApprovalDate : Date, DateOfDefence : Date, DefanceLocation : String) {
         
         self.TopicID = TopicID
         self.Title = Title
@@ -25,7 +25,7 @@ class Topic {
         self.LecturerList = Array<Lecturer>()
     }
     
-    var TopicID : Int32 {
+    var TopicID : Int {
         get {
             return self.TopicID
         }
