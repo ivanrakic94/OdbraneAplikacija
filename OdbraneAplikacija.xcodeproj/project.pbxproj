@@ -15,10 +15,7 @@
 		6BDFC84B1FEBE8C000450A9A /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFC84A1FEBE8C000450A9A /* Topic.swift */; };
 		6BDFC84D1FEBE8DE00450A9A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFC84C1FEBE8DE00450A9A /* User.swift */; };
 		6BDFC84F1FEBE90100450A9A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDFC84E1FEBE90100450A9A /* Activity.swift */; };
-		6BDFC86A1FEBFAD700450A9A /* Eureka in Resources */ = {isa = PBXBuildFile; fileRef = 6BDFC8691FEBFAD700450A9A /* Eureka */; };
-		6BDFC86B1FEBFB1900450A9A /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDFC8601FEBFACB00450A9A /* Eureka.framework */; };
-		6BDFC86C1FEBFB1F00450A9A /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDFC8601FEBFACB00450A9A /* Eureka.framework */; };
-		6BDFC86D1FEBFB1F00450A9A /* Eureka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDFC8601FEBFACB00450A9A /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6BDFC8831FEC00BE00450A9A /* Eureka-master in Resources */ = {isa = PBXBuildFile; fileRef = 6BDFC8821FEC00BE00450A9A /* Eureka-master */; };
 		FD05DCFC1FEBF12700422040 /* Controler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05DCFB1FEBF12700422040 /* Controler.swift */; };
 		FD05DD971FEBF40A00422040 /* SQLite.swift-master in Resources */ = {isa = PBXBuildFile; fileRef = FD05DD961FEBF40A00422040 /* SQLite.swift-master */; };
 		FD05DDB01FEBF42E00422040 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD05DDA31FEBF42700422040 /* SQLite.framework */; };
@@ -34,26 +31,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6BDFC85F1FEBFACB00450A9A /* PBXContainerItemProxy */ = {
+		6BDFC87E1FEC009C00450A9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6BDFC85A1FEBFACB00450A9A /* Eureka.xcodeproj */;
+			containerPortal = 6BDFC8791FEC009C00450A9A /* Eureka.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 51729DEB1B9A4F5E004A00EB;
 			remoteInfo = Eureka;
 		};
-		6BDFC8611FEBFACB00450A9A /* PBXContainerItemProxy */ = {
+		6BDFC8801FEC009C00450A9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6BDFC85A1FEBFACB00450A9A /* Eureka.xcodeproj */;
+			containerPortal = 6BDFC8791FEC009C00450A9A /* Eureka.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 51729DF51B9A4F5E004A00EB;
 			remoteInfo = EurekaTests;
-		};
-		6BDFC86E1FEBFB1F00450A9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6BDFC85A1FEBFACB00450A9A /* Eureka.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 51729DEA1B9A4F5E004A00EB;
-			remoteInfo = Eureka;
 		};
 		FD05DDA21FEBF42700422040 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -121,7 +111,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FD05DDB21FEBF43100422040 /* SQLite.framework in Embed Frameworks */,
-				6BDFC86D1FEBFB1F00450A9A /* Eureka.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +126,8 @@
 		6BDFC84A1FEBE8C000450A9A /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		6BDFC84C1FEBE8DE00450A9A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6BDFC84E1FEBE90100450A9A /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		6BDFC85A1FEBFACB00450A9A /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = Eureka/Eureka.xcodeproj; sourceTree = "<group>"; };
-		6BDFC8691FEBFAD700450A9A /* Eureka */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Eureka; sourceTree = "<group>"; };
+		6BDFC8791FEC009C00450A9A /* Eureka.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Eureka.xcodeproj; path = "Eureka-master/Eureka.xcodeproj"; sourceTree = "<group>"; };
+		6BDFC8821FEC00BE00450A9A /* Eureka-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Eureka-master"; sourceTree = "<group>"; };
 		FD05DCFB1FEBF12700422040 /* Controler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controler.swift; sourceTree = "<group>"; };
 		FD05DD961FEBF40A00422040 /* SQLite.swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SQLite.swift-master"; sourceTree = "<group>"; };
 		FD05DD981FEBF42600422040 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = SOURCE_ROOT; };
@@ -158,8 +147,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDFC86B1FEBFB1900450A9A /* Eureka.framework in Frameworks */,
-				6BDFC86C1FEBFB1F00450A9A /* Eureka.framework in Frameworks */,
 				FD05DDB11FEBF43100422040 /* SQLite.framework in Frameworks */,
 				FD05DDB01FEBF42E00422040 /* SQLite.framework in Frameworks */,
 			);
@@ -182,11 +169,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6BDFC85B1FEBFACB00450A9A /* Products */ = {
+		6BDFC87A1FEC009C00450A9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6BDFC8601FEBFACB00450A9A /* Eureka.framework */,
-				6BDFC8621FEBFACB00450A9A /* EurekaTests.xctest */,
+				6BDFC87F1FEC009C00450A9A /* Eureka.framework */,
+				6BDFC8811FEC009C00450A9A /* EurekaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,7 +203,7 @@
 		FD38AF211FE954BF00987645 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6BDFC8691FEBFAD700450A9A /* Eureka */,
+				6BDFC8821FEC00BE00450A9A /* Eureka-master */,
 				FD05DD961FEBF40A00422040 /* SQLite.swift-master */,
 			);
 			name = Frameworks;
@@ -245,7 +232,7 @@
 			children = (
 				FDD37C281FE92BA1006835AE /* OdbraneAplikacija */,
 				FDD37C271FE92BA1006835AE /* Products */,
-				6BDFC85A1FEBFACB00450A9A /* Eureka.xcodeproj */,
+				6BDFC8791FEC009C00450A9A /* Eureka.xcodeproj */,
 				FD38AF211FE954BF00987645 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -291,7 +278,6 @@
 			);
 			dependencies = (
 				FD05DDB41FEBF43100422040 /* PBXTargetDependency */,
-				6BDFC86F1FEBFB1F00450A9A /* PBXTargetDependency */,
 			);
 			name = OdbraneAplikacija;
 			productName = OdbraneAplikacija;
@@ -327,8 +313,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6BDFC85B1FEBFACB00450A9A /* Products */;
-					ProjectRef = 6BDFC85A1FEBFACB00450A9A /* Eureka.xcodeproj */;
+					ProductGroup = 6BDFC87A1FEC009C00450A9A /* Products */;
+					ProjectRef = 6BDFC8791FEC009C00450A9A /* Eureka.xcodeproj */;
 				},
 				{
 					ProductGroup = FD05DD991FEBF42600422040 /* Products */;
@@ -343,18 +329,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6BDFC8601FEBFACB00450A9A /* Eureka.framework */ = {
+		6BDFC87F1FEC009C00450A9A /* Eureka.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Eureka.framework;
-			remoteRef = 6BDFC85F1FEBFACB00450A9A /* PBXContainerItemProxy */;
+			remoteRef = 6BDFC87E1FEC009C00450A9A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6BDFC8621FEBFACB00450A9A /* EurekaTests.xctest */ = {
+		6BDFC8811FEC009C00450A9A /* EurekaTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = EurekaTests.xctest;
-			remoteRef = 6BDFC8611FEBFACB00450A9A /* PBXContainerItemProxy */;
+			remoteRef = 6BDFC8801FEC009C00450A9A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		FD05DDA31FEBF42700422040 /* SQLite.framework */ = {
@@ -413,10 +399,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDFC86A1FEBFAD700450A9A /* Eureka in Resources */,
 				FDD37C361FE92BA1006835AE /* LaunchScreen.storyboard in Resources */,
 				FD05DD971FEBF40A00422040 /* SQLite.swift-master in Resources */,
 				FDD37C331FE92BA1006835AE /* Assets.xcassets in Resources */,
+				6BDFC8831FEC00BE00450A9A /* Eureka-master in Resources */,
 				FDD37C311FE92BA1006835AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,11 +433,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6BDFC86F1FEBFB1F00450A9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Eureka;
-			targetProxy = 6BDFC86E1FEBFB1F00450A9A /* PBXContainerItemProxy */;
-		};
 		FD05DDB41FEBF43100422040 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SQLite iOS";
