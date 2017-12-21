@@ -55,7 +55,7 @@ class Template {
         }
     }
     
-    var ActivityList : Array<Activity> = Array() {
+    var ActivityList : Array<Activity> {
         get {
             return self.ActivityList
         }
