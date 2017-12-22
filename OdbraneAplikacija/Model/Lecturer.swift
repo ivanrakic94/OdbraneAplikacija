@@ -8,15 +8,22 @@
 
 import UIKit
 
-class Lecturer: Person {
+class Lecturer {
+    
+    var PersonID: Int?
+    var FirstName: String?
+    var LastName: String?
+    var Email: String?
+    var Sex: String?
+    var Telephone: String?
+    var Title: String?
     
     init() {
     }
     
-    init(PersonID : Int, FirstName : String, LastName : String, Email : String, Sex : String, Telephone : String, Title : String) {
+    init(FirstNameP : String, LastName : String, Email : String, Sex : String, Telephone : String, Title : String) {
         
-        self.PersonID = PersonID
-        self.FirstName = FirstName
+        self.FirstName = FirstNameP
         self.LastName = LastName
         self.Email = Email
         self.Sex = Sex
@@ -24,7 +31,7 @@ class Lecturer: Person {
         self.Title = Title
     }
     
-    var PersonID : Int {
+    /*var PersonID : Int {
         get {
             return self.PersonID
         }
@@ -37,8 +44,8 @@ class Lecturer: Person {
         get {
             return self.FirstName
         }
-        set(FirstName) {
-            self.FirstName = FirstName
+        set(FirstNameP) {
+            self.FirstName = FirstNameP
         }
     }
     
@@ -46,8 +53,8 @@ class Lecturer: Person {
         get {
             return self.LastName
         }
-        set(LastName) {
-            self.LastName = LastName
+        set(LastNameP) {
+            self.LastName = LastNameP
         }
     }
     
@@ -55,8 +62,8 @@ class Lecturer: Person {
         get {
             return self.Email
         }
-        set(Email) {
-            self.Email = Email
+        set(EmailP) {
+            self.Email = EmailP
         }
     }
     
@@ -73,8 +80,8 @@ class Lecturer: Person {
         get {
             return self.Telephone
         }
-        set(Telephone) {
-            self.Telephone = Telephone
+        set(TelephoneP) {
+            self.Telephone = TelephoneP
         }
     }
     
@@ -82,10 +89,10 @@ class Lecturer: Person {
         get {
             return self.Title
         }
-        set(Title) {
-            self.Title = Title
+        set(TitleP) {
+            self.Title = TitleP
         }
-    }
+    }*/
     
 }
 

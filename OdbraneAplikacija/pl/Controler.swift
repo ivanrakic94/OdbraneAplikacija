@@ -25,8 +25,10 @@ class Controler: NSObject {
         return instance!
     }
     
-    private func saveLecturer() throws {
-        
+    public func saveLecturer(lect: Lecturer) throws {
+        dbb.openConnection()
+        try dbb.saveLecturer(lect: lect)
+        dbb.closeConnection()
     }
     
 }

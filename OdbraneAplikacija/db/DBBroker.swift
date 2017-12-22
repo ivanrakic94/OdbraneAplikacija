@@ -17,7 +17,7 @@ class DBBroker: NSObject {
     let Lecturer = Table("Lecturer")
     let PersonID = Expression<Int>("PersonID")
     let FirstName = Expression<String>("FirstName")
-    let LastName = Expression<String>("Email")
+    let LastName = Expression<String>("LastName")
     let Email = Expression<String>("Email")
     let Sex = Expression<String>("Sex")
     let Telephone = Expression<String>("Telephone")
@@ -55,7 +55,7 @@ class DBBroker: NSObject {
     
     let Membership = Table("Membership")
     
-    func otvoriKonekciju() {
+    func openConnection() {
         do {
             databaseUrl = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("baza_odbrana").appendingPathExtension("sqlite3")
             
@@ -227,8 +227,14 @@ class DBBroker: NSObject {
         db = nil
     }
     
-    func saveLecturer() throws {
+    func saveLecturer(lect: Lecturer) throws {
+        let insert = Lecturer.insert(FirstName <- lect.FirstName!, LastName <- lect.LastName!, Email <- lect.Email!, Sex <- lect.Sex!, Telephone <- lect.Telephone!, Title <- lect.Title!)
         
+        try db.run(insert)
+        
+        for lect in try db.prepare(Lecturer) {
+            print("Lect \(lect[FirstName]) \(lect[LastName]) \(lect[Email]) \(lect[Sex]) \(lect[Telephone]) \(lect[Title])")
+        }
     }
     
 }

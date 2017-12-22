@@ -13,7 +13,7 @@
         <!--Insert-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="OdbraneAplikacija" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="InsertViewController" customModule="OdbraneAplikacija" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,6 +100,9 @@
                                 <state key="normal" title="Sačuvaj">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveLecturer:" destination="9pv-A4-QxB" eventType="touchUpInside" id="YFR-bi-nm0"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PjT-kJ-IkO">
                                 <rect key="frame" x="119" y="263" width="176" height="32"/>
@@ -165,6 +168,14 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Insert" image="second" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="emailTxt" destination="iCK-a3-35a" id="VTY-pw-SSr"/>
+                        <outlet property="lastNameTxt" destination="lKZ-e6-cap" id="bpK-hM-520"/>
+                        <outlet property="nameTxt" destination="F4p-wM-mNL" id="MfQ-Dt-InG"/>
+                        <outlet property="sexSwitch" destination="PjT-kJ-IkO" id="1lT-Oz-h4F"/>
+                        <outlet property="telephoneTxt" destination="bOx-Xb-1qu" id="7yG-3v-nPu"/>
+                        <outlet property="titleTxt" destination="eR0-t1-yN9" id="k68-4J-vJD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
