@@ -10,6 +10,11 @@ import UIKit
 
 class Activity {
     
+    var ActivityID : Int?
+    var ActivityName : String?
+    var TemplateList : Array<Template>?
+    var TopicList : Array<Topic>?
+    
     init() {
     }
     
@@ -20,40 +25,36 @@ class Activity {
         self.TopicList = Array<Topic>()
     }
     
-    var ActivityID : Int {
-        get {
-            return self.ActivityID
-        }
-        set (ActivityID) {
-            self.ActivityID = ActivityID
-        }
+    func getActivityID() -> Int {
+        return ActivityID!
     }
     
-    var ActivityName : String {
-        get {
-            return self.ActivityName
-        }
-        set (ActivityName) {
-            self.ActivityName = ActivityName
-        }
+    func setActivityID(ActivityID : Int) {
+        self.ActivityID = ActivityID
     }
     
-    var TopicList : Array<Topic> {
-        get {
-            return self.TopicList
-        }
-        set (TopicListP) {
-            self.TopicList = TopicListP
-        }
+    func getActivityName() -> String {
+        return ActivityName!
     }
     
-    var TemplateList : Array<Template> {
-        get {
-            return self.TemplateList
-        }
-        set (TemplateListP) {
-            self.TemplateList = TemplateListP
-        }
+    func setActivityName(ActivityName : String) {
+        self.ActivityName = ActivityName
+    }
+    
+    func getTemplates() -> Array<Template> {
+        return TemplateList!
+    }
+    
+    func setTemplates(TemplateList : Array<Template>) {
+        self.TemplateList = TemplateList
+    }
+    
+    func getTopics() -> Array<Topic> {
+        return TopicList!
+    }
+    
+    func setTopics(TopicList : Array<Topic>) {
+        self.TopicList = TopicList
     }
 }
 

@@ -8,14 +8,21 @@
 
 import UIKit
 
-class Student: Person {
+class Student {
+    
+    var PersonID: Int?
+    var FirstName: String?
+    var LastName: String?
+    var Email: String?
+    var Sex: String?
+    var Telephone: String?
+    var Index : String?
     
     init() {
     }
     
-    init(PersonID : Int, FirstName : String, LastName : String, Email : String, Sex : String, Telephone : String, Index : String) {
+    init(FirstName : String, LastName : String, Email : String, Sex : String, Telephone : String, Index : String) {
         
-        self.PersonID = PersonID
         self.FirstName = FirstName
         self.LastName = LastName
         self.Email = Email
@@ -24,68 +31,60 @@ class Student: Person {
         self.Index = Index
     }
     
-    var PersonID : Int {
-        get {
-            return self.PersonID
-        }
-        set(PersonID) {
-            self.PersonID = PersonID
-        }
+    func getPersonID() -> Int {
+        return PersonID!
     }
     
-    var FirstName : String {
-        get {
-            return self.FirstName
-        }
-        set(FirstName) {
-            self.FirstName = FirstName
-        }
+    func setPersonID(PersonID : Int) {
+        self.PersonID = PersonID
     }
     
-    var LastName : String {
-        get {
-            return self.LastName
-        }
-        set(LastName) {
-            self.LastName = LastName
-        }
+    func getFirstName() -> String {
+        return FirstName!
     }
     
-    var Email : String {
-        get {
-            return self.Email
-        }
-        set(Email) {
-            self.Email = Email
-        }
+    func setFirstName(FirstName : String) {
+        self.FirstName = FirstName
     }
     
-    var Sex : String {
-        get {
-            return self.Sex
-        }
-        set(Sex) {
-            self.Sex = Sex
-        }
+    func getLastName() -> String {
+        return LastName!
     }
     
-    var Telephone : String {
-        get {
-            return self.Telephone
-        }
-        set(Telephone) {
-            self.Telephone = Telephone
-        }
+    func setLastName(LastName : String) {
+        self.LastName = LastName
     }
     
-    var Index : String {
-        get {
-            return self.Index
-        }
-        set(Index) {
-            self.Index = Index
-        }
+    func getEmail() -> String {
+        return Email!
     }
     
+    func setEmail(Email : String) {
+        self.Email = Email
+    }
+    
+    func getSex() -> String {
+        return Sex!
+    }
+    
+    func setSex(Sex : String) {
+        self.Sex = Sex
+    }
+    
+    func getTelephone() -> String {
+        return Telephone!
+    }
+    
+    func setTelephone(Telephone : String) {
+        self.Telephone = Telephone
+    }
+    
+    func getIndex() -> String {
+        return Index!
+    }
+    
+    func setTitle(Index : String) {
+        self.Index = Index
+    }
 }
 

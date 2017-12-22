@@ -38,7 +38,7 @@ class InsertViewController: UIViewController {
             sex = "Z"
         }
         
-        let lect: Lecturer = Lecturer(FirstNameP: nameTxt.text!, LastName: lastNameTxt.text!, Email: emailTxt.text!, Sex: sex, Telephone: telephoneTxt.text!, Title: titleTxt.text!)
+        let lect: Lecturer = Lecturer(FirstName: nameTxt.text!, LastName: lastNameTxt.text!, Email: emailTxt.text!, Sex: sex, Telephone: telephoneTxt.text!, Title: titleTxt.text!)
         
         do {
             try Controler.getInstance().saveLecturer(lect: lect)

@@ -21,9 +21,9 @@ class Lecturer {
     init() {
     }
     
-    init(FirstNameP : String, LastName : String, Email : String, Sex : String, Telephone : String, Title : String) {
+    init(FirstName : String, LastName : String, Email : String, Sex : String, Telephone : String, Title : String) {
         
-        self.FirstName = FirstNameP
+        self.FirstName = FirstName
         self.LastName = LastName
         self.Email = Email
         self.Sex = Sex
@@ -31,68 +31,61 @@ class Lecturer {
         self.Title = Title
     }
     
-    /*var PersonID : Int {
-        get {
-            return self.PersonID
-        }
-        set(PersonID) {
-            self.PersonID = PersonID
-        }
+    func getPersonID() -> Int {
+        return PersonID!
     }
     
-    var FirstName : String {
-        get {
-            return self.FirstName
-        }
-        set(FirstNameP) {
-            self.FirstName = FirstNameP
-        }
+    func setPersonID(PersonID : Int) {
+        self.PersonID = PersonID
     }
     
-    var LastName : String {
-        get {
-            return self.LastName
-        }
-        set(LastNameP) {
-            self.LastName = LastNameP
-        }
+    func getFirstName() -> String {
+        return FirstName!
     }
     
-    var Email : String {
-        get {
-            return self.Email
-        }
-        set(EmailP) {
-            self.Email = EmailP
-        }
+    func setFirstName(FirstName : String) {
+        self.FirstName = FirstName
     }
     
-    var Sex : String {
-        get {
-            return self.Sex
-        }
-        set(Sex) {
-            self.Sex = Sex
-        }
+    func getLastName() -> String {
+        return LastName!
     }
     
-    var Telephone : String {
-        get {
-            return self.Telephone
-        }
-        set(TelephoneP) {
-            self.Telephone = TelephoneP
-        }
+    func setLastName(LastName : String) {
+        self.LastName = LastName
     }
     
-    var Title : String {
-        get {
-            return self.Title
-        }
-        set(TitleP) {
-            self.Title = TitleP
-        }
-    }*/
+    func getEmail() -> String {
+        return Email!
+    }
+    
+    func setEmail(Email : String) {
+        self.Email = Email
+    }
+    
+    func getSex() -> String {
+        return Sex!
+    }
+    
+    func setSex(Sex : String) {
+        self.Sex = Sex
+    }
+    
+    func getTelephone() -> String {
+        return Telephone!
+    }
+    
+    func setTelephone(Telephone : String) {
+        self.Telephone = Telephone
+    }
+    
+    func getTitle() -> String {
+        return Title!
+    }
+    
+    func setTitle(Title : String) {
+        self.Title = Title
+    }
     
 }
 

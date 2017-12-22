@@ -9,40 +9,42 @@
 import UIKit
 
 class User: Lecturer {
+
+    var EmailPassword : String?
+    var AllowedNumberOfTopics : Int?
+    var TemplateList : Array<Template>?
     
     init(PersonID: Int, FirstName: String, LastName: String, Email: String, Sex: String, Telephone: String, Title: String, EmailPassword : String, AllowedNumberOfTopics : Int) {
-        super.init(FirstNameP : FirstName, LastName : LastName, Email : Email, Sex : Sex, Telephone : Telephone, Title : Title)
+        super.init(FirstName : FirstName, LastName : LastName, Email : Email, Sex : Sex, Telephone : Telephone, Title : Title)
         self.EmailPassword = EmailPassword
         self.AllowedNumberOfTopics = AllowedNumberOfTopics
         self.TemplateList = Array<Template>()
     }
     
-    var EmailPassword : String {
-        get {
-            return self.EmailPassword
-        }
-        set (EmailPassword) {
-            self.EmailPassword = EmailPassword
-        }
+    func getEmailPassword() -> String {
+        return EmailPassword!
     }
     
-    var AllowedNumberOfTopics : Int {
-        get {
-            return self.AllowedNumberOfTopics
-        }
-        set (AllowedNumberOfTopics) {
-            self.AllowedNumberOfTopics = AllowedNumberOfTopics
-        }
+    func setEmailPassword(EmailPassword : String) {
+        self.EmailPassword = EmailPassword
     }
     
-    var TemplateList : Array<Template> {
-        get {
-            return self.TemplateList
-        }
-        set (TemplateListP) {
-            self.TemplateList = TemplateListP
-        }
+    func getAllowedNumberOfTopics() -> Int {
+        return AllowedNumberOfTopics!
     }
+    
+    func setAllowedNumberOfTopics(AllowedNumberOfTopics : Int) {
+        self.AllowedNumberOfTopics = AllowedNumberOfTopics
+    }
+    
+    func getTemplates() -> Array<Template> {
+        return TemplateList!
+    }
+    
+    func setTemplates(TemplateList : Array<Template>) {
+        self.TemplateList = TemplateList
+    }
+    
     
 }
 
