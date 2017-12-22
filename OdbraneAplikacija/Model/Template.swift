@@ -10,73 +10,71 @@ import UIKit
 
 class Template {
     
+    var TemplateID : Int?
+    var Title : String?
+    var Subject : String?
+    var Content : String?
+    var UserObject : User?
+    var ActivityList : Array<Activity>?
+    
     init() {
     }
     
-    init(TemplateID : Int, Title : String, Subject : String, Content : String) {
+    init(Title : String, Subject : String, Content : String) {
         
-        self.TemplateID = TemplateID
         self.Title = Title
         self.Subject = Subject
         self.Content = Content
         self.ActivityList = Array<Activity>()
     }
     
-    var TemplateID : Int {
-        get {
-            return self.TemplateID
-        }
-        set (TemplateID) {
-            self.TemplateID = TemplateID
-        }
+    func getTemplateID() -> Int {
+        return TemplateID!
     }
     
-    var Title : String {
-        get {
-            return self.Title
-        }
-        set (Title) {
-            self.Title = Title
-        }
+    func setTemplateID(TemplateID : Int) {
+        self.TemplateID = TemplateID
     }
     
-    var Subject : String {
-        get {
-            return self.Subject
-        }
-        set (Subject) {
-            self.Subject = Subject
-        }
+    func getTitle() -> String {
+        return Title!
     }
     
-    var Content : String {
-        get {
-            return self.Content
-        }
-        set (Content) {
-            self.Content = Content
-        }
+    func setTitle(Title : String) {
+        self.Title = Title
     }
     
-    var UserObject : User {
-        get {
-            return self.UserObject
-        }
-        set (UserObject) {
-            self.UserObject = UserObject
-        }
+    func getSubject() -> String {
+        return Subject!
     }
     
-    var ActivityList : Array<Activity> {
-        get {
-            return self.ActivityList
-        }
-        set (ActivityListP) {
-            self.ActivityList = ActivityListP
-        }
+    func setSubject(Subject : String) {
+        self.Subject = Subject
     }
     
+    func getContent() -> String {
+        return Content!
+    }
     
+    func setContent(Content : String) {
+        self.Content = Content
+    }
     
+    func getUser() -> User {
+        return UserObject!
+    }
+    
+    func setUser(UserObject : User) {
+        self.UserObject = UserObject
+    }
+    
+    func getActivities() -> Array<Activity> {
+        return ActivityList!
+    }
+    
+    func setActivities(ActivityList : Array<Activity>) {
+        self.ActivityList = ActivityList
+    }
+   
 }
 

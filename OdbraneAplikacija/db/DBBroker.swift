@@ -228,7 +228,7 @@ class DBBroker: NSObject {
     }
     
     func saveLecturer(lect: Lecturer) throws {
-        let insert = Lecturer.insert(FirstName <- lect.FirstName!, LastName <- lect.LastName!, Email <- lect.Email!, Sex <- lect.Sex!, Telephone <- lect.Telephone!, Title <- lect.Title!)
+        let insert = Lecturer.insert(FirstName <- lect.getFirstName(), LastName <- lect.getLastName(), Email <- lect.getEmail(), Sex <- lect.getSex(), Telephone <- lect.getTelephone(), Title <- lect.getTitle())
         
         try db.run(insert)
         

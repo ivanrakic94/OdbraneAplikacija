@@ -10,10 +10,21 @@ import UIKit
 
 class Topic {
     
+    var TopicID : Int?
+    var Title : String?
+    var Module : String?
+    var Status : String?
+    var ApprovalDate : Date?
+    var DateOfDefence : Date?
+    var DefenceLocation : String?
+    var LecturerObject : Lecturer?
+    var StudentObject : Student?
+    var LecturerList : Array<Lecturer>?
+    
     init() {
     }
     
-    init(TopicID : Int, Title : String, Module : String, Status : String, ApprovalDate : Date, DateOfDefence : Date, DefanceLocation : String) {
+    init(TopicID : Int, Title : String, Module : String, Status : String, ApprovalDate : Date, DateOfDefence : Date, DefenceLocation : String) {
         
         self.TopicID = TopicID
         self.Title = Title
@@ -21,98 +32,88 @@ class Topic {
         self.Status = Status
         self.ApprovalDate = ApprovalDate
         self.DateOfDefence = DateOfDefence
-        self.DefenceLocation = DefanceLocation
+        self.DefenceLocation = DefenceLocation
         self.LecturerList = Array<Lecturer>()
     }
     
-    var TopicID : Int {
-        get {
-            return self.TopicID
-        }
-        set (TopicID) {
-            self.TopicID = TopicID
-        }
+    func getTopicID() -> Int {
+        return TopicID!
     }
     
-    var Title : String {
-        get {
-            return self.Title
-        }
-        set (Title) {
-            self.Title = Title
-        }
+    func setTopicID(TopicID : Int) {
+        self.TopicID = TopicID
     }
     
-    var Module : String {
-        get {
-            return self.Module
-        }
-        set (Module) {
-            self.Module = Module
-        }
+    func getTitle() -> String {
+        return Title!
     }
     
-    var Status : String {
-        get {
-            return self.Status
-        }
-        set (Status) {
-            self.Status = Status
-        }
+    func setTitle(Title : String) {
+        self.Title = Title
     }
     
-    var ApprovalDate : Date {
-        get {
-            return self.ApprovalDate
-        }
-        set (ApprovalDate) {
-            self.ApprovalDate = ApprovalDate
-        }
+    func getModule() -> String {
+        return Module!
     }
     
-    var DateOfDefence : Date {
-        get {
-            return self.DateOfDefence
-        }
-        set (DateOfDefence) {
-            self.DateOfDefence = DateOfDefence
-        }
+    func setModule(Module : String) {
+        self.Module = Module
     }
     
-    var DefenceLocation : String {
-        get {
-            return self.DefenceLocation
-        }
-        set (DefenceLocation) {
-            self.DefenceLocation = DefenceLocation
-        }
+    func getStatus() -> String {
+        return Status!
     }
     
-    var LecturerObject : Lecturer {
-        get {
-            return self.LecturerObject
-        }
-        set (LecturerObject) {
-            self.LecturerObject = LecturerObject
-        }
+    func setStatus(Status : String) {
+        self.Status = Status
     }
     
-    var StudentObject : Student {
-        get {
-            return self.StudentObject
-        }
-        set (StudentObject) {
-            self.StudentObject = StudentObject
-        }
+    func getApprovalDate() -> Date {
+        return ApprovalDate!
     }
     
-    var LecturerList : Array<Lecturer> {
-        get {
-            return self.LecturerList
-        }
-        set (LecturerListP) {
-            self.LecturerList = LecturerListP
-        }
+    func setApprovalDate(ApprovalDate : Date) {
+        self.ApprovalDate = ApprovalDate
+    }
+    
+    func getDateOfDefence() -> Date {
+        return DateOfDefence!
+    }
+    
+    func setDateOfDefence(DateOfDefence : Date) {
+        self.DateOfDefence = DateOfDefence
+    }
+    
+    func getDefenceLocation() -> String {
+        return DefenceLocation!
+    }
+    
+    func setDefenceLocation(DefenceLocation : String) {
+        self.DefenceLocation = DefenceLocation
+    }
+    
+    func getLecturer() -> Lecturer {
+        return LecturerObject!
+    }
+    
+    func setLecturer(LecturerObject : Lecturer) {
+        self.LecturerObject = LecturerObject
+    }
+    
+    func getStudent() -> Student {
+        return StudentObject!
+    }
+    
+    func setStudent(StudentObject : Student) {
+        self.StudentObject = StudentObject
+    }
+    
+    func getLecturers() -> Array<Lecturer> {
+        return LecturerList!
+    }
+    
+    func setLecturers(LecturerList : Array<Lecturer>) {
+        self.LecturerList = LecturerList
     }
     
 }
