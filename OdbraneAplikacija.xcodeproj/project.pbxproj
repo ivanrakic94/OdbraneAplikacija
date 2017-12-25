@@ -21,6 +21,7 @@
 		FD05DDB11FEBF43100422040 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD05DDA31FEBF42700422040 /* SQLite.framework */; };
 		FD05DDB21FEBF43100422040 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD05DDA31FEBF42700422040 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD38AF2B1FE958A800987645 /* DBBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AF2A1FE958A800987645 /* DBBroker.swift */; };
+		FD6BDF761FF12E28003F78AB /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BDF751FF12E28003F78AB /* ConfigurationViewController.swift */; };
 		FD89962A1FED5FCD0053CCF7 /* TelephoneValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */; };
 		FD8996321FED607F0053CCF7 /* LecturerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8996311FED607F0053CCF7 /* LecturerValidator.swift */; };
 		FDC517071FED58FA001CD1F0 /* EmptyStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC517061FED58FA001CD1F0 /* EmptyStringValidator.swift */; };
@@ -119,6 +120,7 @@
 		FD05DD961FEBF40A00422040 /* SQLite.swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SQLite.swift-master"; sourceTree = "<group>"; };
 		FD05DD981FEBF42600422040 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		FD38AF2A1FE958A800987645 /* DBBroker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBroker.swift; sourceTree = "<group>"; };
+		FD6BDF751FF12E28003F78AB /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneValidator.swift; sourceTree = "<group>"; };
 		FD8996311FED607F0053CCF7 /* LecturerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerValidator.swift; sourceTree = "<group>"; };
 		FDC517061FED58FA001CD1F0 /* EmptyStringValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStringValidator.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				FDD37C2B1FE92BA1006835AE /* InsertViewController.swift */,
 				FDD37C2D1FE92BA1006835AE /* UpdateViewController.swift */,
 				873D0F121FF0ED5B001E7149 /* UnosStudentaViewController.swift */,
+				FD6BDF751FF12E28003F78AB /* ConfigurationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				FDD37C2E1FE92BA1006835AE /* UpdateViewController.swift in Sources */,
 				6BDFC8491FEBE89600450A9A /* Template.swift in Sources */,
 				FDD37C2A1FE92BA1006835AE /* AppDelegate.swift in Sources */,
+				FD6BDF761FF12E28003F78AB /* ConfigurationViewController.swift in Sources */,
 				FDC5170B1FED5CB2001CD1F0 /* MailValidator.swift in Sources */,
 				6BDFC84F1FEBE90100450A9A /* Activity.swift in Sources */,
 				FDD37C2C1FE92BA1006835AE /* InsertViewController.swift in Sources */,
