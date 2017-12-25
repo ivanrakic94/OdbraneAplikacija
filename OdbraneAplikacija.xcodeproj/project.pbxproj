@@ -20,6 +20,12 @@
 		FD05DDB11FEBF43100422040 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD05DDA31FEBF42700422040 /* SQLite.framework */; };
 		FD05DDB21FEBF43100422040 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD05DDA31FEBF42700422040 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD38AF2B1FE958A800987645 /* DBBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AF2A1FE958A800987645 /* DBBroker.swift */; };
+		FD89962A1FED5FCD0053CCF7 /* TelephoneValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */; };
+		FD8996321FED607F0053CCF7 /* LecturerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8996311FED607F0053CCF7 /* LecturerValidator.swift */; };
+		FDC517021FED0C61001CD1F0 /* 419310.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC516FB1FED0C61001CD1F0 /* 419310.png */; };
+		FDC517041FED0DCE001CD1F0 /* correct.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC517031FED0DCE001CD1F0 /* correct.svg.png */; };
+		FDC517071FED58FA001CD1F0 /* EmptyStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC517061FED58FA001CD1F0 /* EmptyStringValidator.swift */; };
+		FDC5170B1FED5CB2001CD1F0 /* MailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5170A1FED5CB2001CD1F0 /* MailValidator.swift */; };
 		FDD37C2A1FE92BA1006835AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37C291FE92BA1006835AE /* AppDelegate.swift */; };
 		FDD37C2C1FE92BA1006835AE /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37C2B1FE92BA1006835AE /* InsertViewController.swift */; };
 		FDD37C2E1FE92BA1006835AE /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37C2D1FE92BA1006835AE /* UpdateViewController.swift */; };
@@ -113,6 +119,12 @@
 		FD05DD961FEBF40A00422040 /* SQLite.swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SQLite.swift-master"; sourceTree = "<group>"; };
 		FD05DD981FEBF42600422040 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		FD38AF2A1FE958A800987645 /* DBBroker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBroker.swift; sourceTree = "<group>"; };
+		FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneValidator.swift; sourceTree = "<group>"; };
+		FD8996311FED607F0053CCF7 /* LecturerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerValidator.swift; sourceTree = "<group>"; };
+		FDC516FB1FED0C61001CD1F0 /* 419310.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 419310.png; path = images/419310.png; sourceTree = SOURCE_ROOT; };
+		FDC517031FED0DCE001CD1F0 /* correct.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = correct.svg.png; path = images/correct.svg.png; sourceTree = SOURCE_ROOT; };
+		FDC517061FED58FA001CD1F0 /* EmptyStringValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStringValidator.swift; sourceTree = "<group>"; };
+		FDC5170A1FED5CB2001CD1F0 /* MailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailValidator.swift; sourceTree = "<group>"; };
 		FDD37C261FE92BA1006835AE /* OdbraneAplikacija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdbraneAplikacija.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD37C291FE92BA1006835AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD37C2B1FE92BA1006835AE /* InsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +209,17 @@
 			path = db;
 			sourceTree = "<group>";
 		};
+		FDC517051FED58DE001CD1F0 /* validators */ = {
+			isa = PBXGroup;
+			children = (
+				FDC517061FED58FA001CD1F0 /* EmptyStringValidator.swift */,
+				FDC5170A1FED5CB2001CD1F0 /* MailValidator.swift */,
+				FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */,
+				FD8996311FED607F0053CCF7 /* LecturerValidator.swift */,
+			);
+			path = validators;
+			sourceTree = "<group>";
+		};
 		FDD37C1D1FE92BA1006835AE = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +240,7 @@
 		FDD37C281FE92BA1006835AE /* OdbraneAplikacija */ = {
 			isa = PBXGroup;
 			children = (
+				FDC517051FED58DE001CD1F0 /* validators */,
 				FD05DCFA1FEBF11500422040 /* pl */,
 				6BDFC8411FEBE6AC00450A9A /* Model */,
 				FD38AF291FE9588600987645 /* db */,
@@ -224,6 +248,8 @@
 				FDD37C291FE92BA1006835AE /* AppDelegate.swift */,
 				FDD37C2F1FE92BA1006835AE /* Main.storyboard */,
 				FDD37C321FE92BA1006835AE /* Assets.xcassets */,
+				FDC517031FED0DCE001CD1F0 /* correct.svg.png */,
+				FDC516FB1FED0C61001CD1F0 /* 419310.png */,
 				FDD37C341FE92BA1006835AE /* LaunchScreen.storyboard */,
 				FDD37C371FE92BA1006835AE /* Info.plist */,
 				FD05DD981FEBF42600422040 /* SQLite.xcodeproj */,
@@ -350,7 +376,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC517021FED0C61001CD1F0 /* 419310.png in Resources */,
 				FDD37C361FE92BA1006835AE /* LaunchScreen.storyboard in Resources */,
+				FDC517041FED0DCE001CD1F0 /* correct.svg.png in Resources */,
 				FD05DD971FEBF40A00422040 /* SQLite.swift-master in Resources */,
 				FDD37C331FE92BA1006835AE /* Assets.xcassets in Resources */,
 				FDD37C311FE92BA1006835AE /* Main.storyboard in Resources */,
@@ -369,11 +397,15 @@
 				FDD37C2E1FE92BA1006835AE /* UpdateViewController.swift in Sources */,
 				6BDFC8491FEBE89600450A9A /* Template.swift in Sources */,
 				FDD37C2A1FE92BA1006835AE /* AppDelegate.swift in Sources */,
+				FDC5170B1FED5CB2001CD1F0 /* MailValidator.swift in Sources */,
 				6BDFC84F1FEBE90100450A9A /* Activity.swift in Sources */,
 				FDD37C2C1FE92BA1006835AE /* InsertViewController.swift in Sources */,
 				FD38AF2B1FE958A800987645 /* DBBroker.swift in Sources */,
 				FD05DCFC1FEBF12700422040 /* Controler.swift in Sources */,
 				6B2A3E6C1FE94BED00D422D7 /* DeleteViewController.swift in Sources */,
+				FD8996321FED607F0053CCF7 /* LecturerValidator.swift in Sources */,
+				FDC517071FED58FA001CD1F0 /* EmptyStringValidator.swift in Sources */,
+				FD89962A1FED5FCD0053CCF7 /* TelephoneValidator.swift in Sources */,
 				6BDFC8471FEBE85C00450A9A /* Student.swift in Sources */,
 				6BDFC84D1FEBE8DE00450A9A /* User.swift in Sources */,
 			);
