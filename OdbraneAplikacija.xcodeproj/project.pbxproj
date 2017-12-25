@@ -22,8 +22,6 @@
 		FD38AF2B1FE958A800987645 /* DBBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD38AF2A1FE958A800987645 /* DBBroker.swift */; };
 		FD89962A1FED5FCD0053CCF7 /* TelephoneValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */; };
 		FD8996321FED607F0053CCF7 /* LecturerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8996311FED607F0053CCF7 /* LecturerValidator.swift */; };
-		FDC517021FED0C61001CD1F0 /* 419310.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC516FB1FED0C61001CD1F0 /* 419310.png */; };
-		FDC517041FED0DCE001CD1F0 /* correct.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC517031FED0DCE001CD1F0 /* correct.svg.png */; };
 		FDC517071FED58FA001CD1F0 /* EmptyStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC517061FED58FA001CD1F0 /* EmptyStringValidator.swift */; };
 		FDC5170B1FED5CB2001CD1F0 /* MailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC5170A1FED5CB2001CD1F0 /* MailValidator.swift */; };
 		FDD37C2A1FE92BA1006835AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD37C291FE92BA1006835AE /* AppDelegate.swift */; };
@@ -121,8 +119,6 @@
 		FD38AF2A1FE958A800987645 /* DBBroker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBBroker.swift; sourceTree = "<group>"; };
 		FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneValidator.swift; sourceTree = "<group>"; };
 		FD8996311FED607F0053CCF7 /* LecturerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturerValidator.swift; sourceTree = "<group>"; };
-		FDC516FB1FED0C61001CD1F0 /* 419310.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 419310.png; path = images/419310.png; sourceTree = SOURCE_ROOT; };
-		FDC517031FED0DCE001CD1F0 /* correct.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = correct.svg.png; path = images/correct.svg.png; sourceTree = SOURCE_ROOT; };
 		FDC517061FED58FA001CD1F0 /* EmptyStringValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStringValidator.swift; sourceTree = "<group>"; };
 		FDC5170A1FED5CB2001CD1F0 /* MailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailValidator.swift; sourceTree = "<group>"; };
 		FDD37C261FE92BA1006835AE /* OdbraneAplikacija.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OdbraneAplikacija.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,8 +244,6 @@
 				FDD37C291FE92BA1006835AE /* AppDelegate.swift */,
 				FDD37C2F1FE92BA1006835AE /* Main.storyboard */,
 				FDD37C321FE92BA1006835AE /* Assets.xcassets */,
-				FDC517031FED0DCE001CD1F0 /* correct.svg.png */,
-				FDC516FB1FED0C61001CD1F0 /* 419310.png */,
 				FDD37C341FE92BA1006835AE /* LaunchScreen.storyboard */,
 				FDD37C371FE92BA1006835AE /* Info.plist */,
 				FD05DD981FEBF42600422040 /* SQLite.xcodeproj */,
@@ -376,9 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC517021FED0C61001CD1F0 /* 419310.png in Resources */,
 				FDD37C361FE92BA1006835AE /* LaunchScreen.storyboard in Resources */,
-				FDC517041FED0DCE001CD1F0 /* correct.svg.png in Resources */,
 				FD05DD971FEBF40A00422040 /* SQLite.swift-master in Resources */,
 				FDD37C331FE92BA1006835AE /* Assets.xcassets in Resources */,
 				FDD37C311FE92BA1006835AE /* Main.storyboard in Resources */,
