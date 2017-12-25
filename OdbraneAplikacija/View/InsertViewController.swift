@@ -9,16 +9,17 @@
 import UIKit
 
 class InsertViewController: UIViewController {
-    @IBOutlet weak var telephoneCorrectImage: UIImageView!
-    @IBOutlet weak var emailCorrectImage: UIImageView!
-    @IBOutlet weak var titleErrorImage: UIImageView!
-    @IBOutlet weak var telephoneErrorImage: UIImageView!
     @IBOutlet weak var titleCorrectImage: UIImageView!
-    @IBOutlet weak var lastNameErrorImage: UIImageView!
-    @IBOutlet weak var lastNameCorrectImage: UIImageView!
-    @IBOutlet weak var nameCorrectImage: UIImageView!
+    @IBOutlet weak var titleErrorImage: UIImageView!
+    @IBOutlet weak var telephoneCorrectImage: UIImageView!
+    @IBOutlet weak var telephoneErrorImage: UIImageView!
+    @IBOutlet weak var emailCorrectImage: UIImageView!
     @IBOutlet weak var emailErrorImage: UIImageView!
+    @IBOutlet weak var lastNameCorrectImage: UIImageView!
+    @IBOutlet weak var lastNameErrorImage: UIImageView!
     @IBOutlet weak var nameErrorImage: UIImageView!
+    @IBOutlet weak var nameCorrectImage: UIImageView!
+    
     
     @IBOutlet weak var nameTxt: UITextField!
     @IBOutlet weak var titleTxt: UITextField!
