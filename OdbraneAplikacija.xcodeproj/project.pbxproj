@@ -30,6 +30,7 @@
 		FDD37C311FE92BA1006835AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD37C2F1FE92BA1006835AE /* Main.storyboard */; };
 		FDD37C331FE92BA1006835AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD37C321FE92BA1006835AE /* Assets.xcassets */; };
 		FDD37C361FE92BA1006835AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD37C341FE92BA1006835AE /* LaunchScreen.storyboard */; };
+		FDEC0AD01FF0F84A00C11D7E /* NameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC0ACF1FF0F84A00C11D7E /* NameValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		FDD37C321FE92BA1006835AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD37C351FE92BA1006835AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDD37C371FE92BA1006835AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDEC0ACF1FF0F84A00C11D7E /* NameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 				FDC5170A1FED5CB2001CD1F0 /* MailValidator.swift */,
 				FD8996291FED5FCD0053CCF7 /* TelephoneValidator.swift */,
 				FD8996311FED607F0053CCF7 /* LecturerValidator.swift */,
+				FDEC0ACF1FF0F84A00C11D7E /* NameValidator.swift */,
 			);
 			path = validators;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				FD89962A1FED5FCD0053CCF7 /* TelephoneValidator.swift in Sources */,
 				6BDFC8471FEBE85C00450A9A /* Student.swift in Sources */,
 				6BDFC84D1FEBE8DE00450A9A /* User.swift in Sources */,
+				FDEC0AD01FF0F84A00C11D7E /* NameValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

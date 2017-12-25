@@ -12,7 +12,17 @@ class EmptyStringValidator: NSObject {
     
     static func validateEmpty(txtField: UITextField) -> Bool {
         if let value = txtField.text {
-            return !value.isEmpty
+            return !value.isEmpty && EmptyStringValidator.checkEmpty(value: value)
+        }
+        
+        return false
+    }
+    
+    private static func checkEmpty(value: String) -> Bool {
+        for c in value {
+            if c != " " {
+                return true
+            }
         }
         
         return false

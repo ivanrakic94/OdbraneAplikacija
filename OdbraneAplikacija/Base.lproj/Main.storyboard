@@ -127,49 +127,49 @@
                                     <segment title="Ženski"/>
                                 </segments>
                             </segmentedControl>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rcq-Ja-xrJ">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310" translatesAutoresizingMaskIntoConstraints="NO" id="Rcq-Ja-xrJ">
                                 <rect key="frame" x="329" y="100" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="3LP-bQ-zYN"/>
                                     <constraint firstAttribute="height" constant="30" id="bQ0-k0-x4D"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310.png" translatesAutoresizingMaskIntoConstraints="NO" id="LRX-ed-Etq">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310" translatesAutoresizingMaskIntoConstraints="NO" id="LRX-ed-Etq">
                                 <rect key="frame" x="329" y="157" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="5cL-pL-5zc"/>
                                     <constraint firstAttribute="height" constant="30" id="ol8-qq-t64"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310.png" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-cy-q0l">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-cy-q0l">
                                 <rect key="frame" x="329" y="213" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3hL-lU-Yum"/>
                                     <constraint firstAttribute="width" constant="30" id="L8s-9l-CpT"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-Ll-0xY">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-Ll-0xY">
                                 <rect key="frame" x="329" y="100" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6BK-5R-y5L"/>
                                     <constraint firstAttribute="width" constant="30" id="9Ms-eF-bP1"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-6O-t85">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg" translatesAutoresizingMaskIntoConstraints="NO" id="xOe-6O-t85">
                                 <rect key="frame" x="329" y="156" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GsS-PP-EJI"/>
                                     <constraint firstAttribute="width" constant="30" id="nnZ-yN-qyA"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="r4Y-Ny-nz7">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg" translatesAutoresizingMaskIntoConstraints="NO" id="r4Y-Ny-nz7">
                                 <rect key="frame" x="329" y="212" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="HCT-ye-aiy"/>
                                     <constraint firstAttribute="height" constant="30" id="t5D-mQ-3fD"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310.png" translatesAutoresizingMaskIntoConstraints="NO" id="DmK-2x-d8C">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310" translatesAutoresizingMaskIntoConstraints="NO" id="DmK-2x-d8C">
                                 <rect key="frame" x="329" y="314" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="GHq-wS-PoL"/>
@@ -178,7 +178,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="fQ8-0O-HBE"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310.png" translatesAutoresizingMaskIntoConstraints="NO" id="l93-Xr-Jhl">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="419310" translatesAutoresizingMaskIntoConstraints="NO" id="l93-Xr-Jhl">
                                 <rect key="frame" x="329" y="369" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5A6-MN-8Sv"/>
@@ -187,14 +187,14 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="qYc-B1-J4H"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-s0-LNf">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-s0-LNf">
                                 <rect key="frame" x="329" y="314" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="chU-i8-sd2"/>
                                     <constraint firstAttribute="height" constant="30" id="v8E-5o-qxT"/>
                                 </constraints>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="HeF-RV-VWv">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct.svg" translatesAutoresizingMaskIntoConstraints="NO" id="HeF-RV-VWv">
                                 <rect key="frame" x="329" y="369" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="19y-BB-urc"/>
@@ -386,8 +386,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="419310.png" width="512" height="512"/>
-        <image name="correct.svg.png" width="1024" height="1024"/>
+        <image name="419310" width="512" height="512"/>
+        <image name="correct.svg" width="1024" height="1024"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

@@ -72,7 +72,7 @@ class InsertViewController: UIViewController {
     }
     
     @IBAction func nameChange(_ sender: Any) {
-        if EmptyStringValidator.validateEmpty(txtField: nameTxt) {
+        if NameValidator.validateName(txtField: nameTxt) {
             nameErrorImage.isHidden = true
             nameCorrectImage.isHidden = false
             return
@@ -96,7 +96,7 @@ class InsertViewController: UIViewController {
     }
     
     @IBAction func lastNameChanged(_ sender: Any) {
-        if EmptyStringValidator.validateEmpty(txtField: lastNameTxt) {
+        if NameValidator.validateName(txtField: lastNameTxt) {
             lastNameErrorImage.isHidden = true
             lastNameCorrectImage.isHidden = false
             return
