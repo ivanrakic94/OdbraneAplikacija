@@ -31,5 +31,11 @@ class Controler: NSObject {
         dbb.closeConnection()
     }
     
+    public func saveUser(user: User) throws {
+        dbb.openConnection()
+        try dbb.saveUser(user: user)
+        dbb.closeConnection()
+    }
+    
 }
 

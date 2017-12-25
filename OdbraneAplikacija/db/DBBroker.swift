@@ -63,8 +63,8 @@ class DBBroker: NSObject {
             
             createLecturerTable()
             createUserTable()
-            createTopicTable()
             createStudentTable()
+            createTopicTable()
             createActivityTable()
             createTemplateTable()
             createAssignmentTable()
@@ -122,6 +122,12 @@ class DBBroker: NSObject {
     func createUserTable() {
         let createTable = User.create { (table) in
             table.column(PersonID, references: Lecturer, PersonID)
+            table.column(FirstName)
+            table.column(LastName)
+            table.column(Email)
+            table.column(Telephone)
+            table.column(Title)
+            table.column(Sex)
             table.column(EmailPassword)
             table.column(numberOfTopics)
             table.primaryKey(PersonID)
@@ -234,6 +240,16 @@ class DBBroker: NSObject {
         
         for lect in try db.prepare(Lecturer) {
             print("Lect \(lect[FirstName]) \(lect[LastName]) \(lect[Email]) \(lect[Sex]) \(lect[Telephone]) \(lect[Title])")
+        }
+    }
+    
+    func saveUser(user: User) throws {
+        let insert = User.insert(FirstName <- user.getFirstName(), LastName <- user.getLastName(), Email <- user.getEmail(), Sex <- user.getSex(), Telephone <- user.getTelephone(), Title <- user.getTitle(), EmailPassword <- user.getEmailPassword(), numberOfTopics <- user.getAllowedNumberOfTopics())
+        
+        try db.run(insert)
+        
+        for us in try db.prepare(User) {
+            print("User \(us[FirstName]) \(us[LastName]) \(us[Email]) \(us[Sex]) \(us[Telephone]) \(us[Title]) \(us[EmailPassword]) \(us[numberOfTopics])")
         }
     }
     
