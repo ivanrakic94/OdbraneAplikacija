@@ -37,5 +37,11 @@ class Controler: NSObject {
         dbb.closeConnection()
     }
     
+    public func getActiveUser(user: User) throws {
+        dbb.openConnection()
+        try dbb.getActiveUser(user: user)
+        dbb.closeConnection()
+    }
+    
 }
 

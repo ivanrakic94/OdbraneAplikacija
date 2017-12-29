@@ -14,6 +14,10 @@ class User: Lecturer {
     var AllowedNumberOfTopics : Int?
     var TemplateList : Array<Template>?
     
+    override init() {
+        super.init()
+    }
+    
     init(FirstName: String, LastName: String, Email: String, Sex: String, Telephone: String, Title: String, EmailPassword : String, AllowedNumberOfTopics : Int) {
         super.init(FirstName : FirstName, LastName : LastName, Email : Email, Sex : Sex, Telephone : Telephone, Title : Title)
         self.EmailPassword = EmailPassword

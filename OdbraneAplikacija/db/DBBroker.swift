@@ -29,6 +29,7 @@ class DBBroker: NSObject {
     let User = Table("User")
     let EmailPassword = Expression<String>("EmailPassword")
     let numberOfTopics = Expression<Int>("AllowedNumberOfTopics")
+    let activeUser = Expression<Bool>("activeUser")
     
     let Activity = Table("Activity")
     let ActivityID = Expression<Int>("ActivityID")
@@ -130,6 +131,7 @@ class DBBroker: NSObject {
             table.column(Sex)
             table.column(EmailPassword)
             table.column(numberOfTopics)
+            table.column(activeUser)
             table.primaryKey(PersonID)
         }
         
@@ -229,6 +231,22 @@ class DBBroker: NSObject {
         }
     }
     
+    func dropAllTables() {
+        do {
+            try db.run(Membership.drop(ifExists: true))
+            try db.run(Assignment.drop(ifExists: true))
+            try db.run(Template.drop(ifExists: true))
+            try db.run(Activity.drop(ifExists: true))
+            try db.run(Topic.drop(ifExists: true))
+            try db.run(Student.drop(ifExists: true))
+            try db.run(User.drop(ifExists: true))
+            try db.run(Lecturer.drop(ifExists: true))
+        } catch {
+            print("Error droping tables")
+            print(error)
+        }
+    }
+    
     func closeConnection() {
         db = nil
     }
@@ -243,13 +261,27 @@ class DBBroker: NSObject {
         }
     }
     
+    func getActiveUser(user: User) throws{
+        let us = try db.pluck(User.filter(activeUser == true))
+        
+        user.setPersonID(PersonID: us![PersonID])
+        user.setFirstName(FirstName: us![FirstName])
+        user.setLastName(LastName: us![LastName])
+        user.setSex(Sex: us![Sex])
+        user.setEmail(Email: us![Email])
+        user.setEmailPassword(EmailPassword: us![EmailPassword])
+        user.setTelephone(Telephone: us![Telephone])
+        user.setTitle(Title: us![Title])
+        user.setAllowedNumberOfTopics(AllowedNumberOfTopics: us![numberOfTopics])
+    }
+    
     func saveUser(user: User) throws {
-        let insert = User.insert(FirstName <- user.getFirstName(), LastName <- user.getLastName(), Email <- user.getEmail(), Sex <- user.getSex(), Telephone <- user.getTelephone(), Title <- user.getTitle(), EmailPassword <- user.getEmailPassword(), numberOfTopics <- user.getAllowedNumberOfTopics())
+        let insert = User.insert(FirstName <- user.getFirstName(), LastName <- user.getLastName(), Email <- user.getEmail(), Sex <- user.getSex(), Telephone <- user.getTelephone(), Title <- user.getTitle(), EmailPassword <- user.getEmailPassword(), numberOfTopics <- user.getAllowedNumberOfTopics(), activeUser <- true)
         
         try db.run(insert)
         
         for us in try db.prepare(User) {
-            print("User \(us[FirstName]) \(us[LastName]) \(us[Email]) \(us[Sex]) \(us[Telephone]) \(us[Title]) \(us[EmailPassword]) \(us[numberOfTopics])")
+            print("User \(us[FirstName]) \(us[LastName]) \(us[Email]) \(us[Sex]) \(us[Telephone]) \(us[Title]) \(us[EmailPassword]) \(us[numberOfTopics]) active: \(activeUser)")
         }
     }
     
